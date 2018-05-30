@@ -10,11 +10,9 @@ namespace CoreMvcTdd.Tests.Controller
     {
         [Fact]
         public void TestAbout_ShouldReturnViewResult()
-        {
-            //This is to test the web hook trigger
+        {           
             var result = _homeController.About();
-            var viewResult = Assert.IsType<ViewResult>(result);
-            
+            var viewResult = Assert.IsType<ViewResult>(result);            
         }
     }
 }
